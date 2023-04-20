@@ -1,4 +1,4 @@
-/* Step 2: Add basic styles */
+/* Step 2 */
 
 /* Divs with class 'set' */
 .set {
@@ -25,13 +25,13 @@ li {
   padding: 5px;
 }
 
-/* Step 3: Add hover effect */
+/* Step 3 */
 li:hover {
   background-color: red;
   transition: background-color 0.3s; /* Optional transition */
 }
 
-/* Step 4: Responsive layout */
+/* Step 4 */
 
 /* Wide screen (desktop) */
 @media screen and (min-width: 992px) {
@@ -73,4 +73,5 @@ li:hover {
 /* Center-align title and footer */
 #MyTitle, #MyFoot {
   text-align: center;
+  border: 1px solid black
 }
