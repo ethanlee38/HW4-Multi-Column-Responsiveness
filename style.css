@@ -72,6 +72,7 @@ li:hover {
 
 /* Center-align title and footer */
 #MyTitle, #MyFoot {
+  background-color: orange;
   text-align: center;
   border: 1px solid black
 }
