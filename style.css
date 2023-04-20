@@ -1,0 +1,76 @@
+/* Step 2: Add basic styles */
+
+/* Divs with class 'set' */
+.set {
+  background-color: orange;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center; /* Align content to center */
+}
+
+/* Unordered lists */
+ul {
+  list-style-type: none;
+}
+
+/* List items */
+li {
+  width: 100px;
+  height: 30px;
+  background-color: purple;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Step 3: Add hover effect */
+li:hover {
+  background-color: red;
+  transition: background-color 0.3s; /* Optional transition */
+}
+
+/* Step 4: Responsive layout */
+
+/* Wide screen (desktop) */
+@media screen and (min-width: 992px) {
+  body {
+      text-align: center; /* Align divs to center */
+  }
+  .set {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(21% - 20px);
+  }
+}
+
+/* Medium screen (tablet) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .set {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 20px);
+      box-sizing: border-box;
+  }
+
+  /* Clear floats after every second div to make sure the next div starts on a new line */
+  .set:nth-child(2n)::after {
+      content: '';
+      display: table;
+      clear: both;
+  }
+}
+
+/* Small screen (mobile) */
+@media screen and (max-width: 767px) {
+  .set {
+      display: block;
+      width: 80%;
+  }
+}
+
+/* Center-align title and footer */
+#MyTitle, #MyFoot {
+  text-align: center;
+}
